@@ -1,0 +1,16 @@
+domain: shongs.vpa.com
+layout:
+- go.kubebuilder.io/v3
+projectName: vpa-operator
+repo: myoperator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: shongs.vpa.com
+  group: vpa
+  kind: Config
+  path: myoperator/api/v1alpha1
+  version: v1alpha1
+version: "3"
